@@ -9,6 +9,7 @@ This project leverages a neural network to perform sentiment classification on I
 - [Building the Neural Network](#building-the-neural-network)
 - [Training and Validation](#training-and-validation)
 - [Result Analysis](#result-analysis)
+- [Result Images](#result-images)
 - [Conclusion](#conclusion)
 
 ## Imports and Prerequisites
@@ -88,9 +89,25 @@ for epoch in range(200):
 
 ## Result Analysis
 
-- Accuracy and Loss Curves: Plots generated during training visualize the model's accuracy and loss over epochs for both training and validation sets.
-- Classification Report: Displays precision, recall, and F1 scores.
-- ROC Curve: Shows model performance across various threshold levels, including micro- and macro-average curves.
+- **Accuracy and Loss Curves:** Plots generated during training visualize the model's accuracy and loss over epochs for both training and validation sets.
+- **Classification Report:** Displays precision, recall, and F1 scores.
+- **ROC Curve:** Shows model performance across various threshold levels, including micro- and macro-average curves.
+
+## Result Images
+
+![Classification Report](images/classificationReport.png)
+![Accurracy Loss Plots](images/acurracyLossPlots.png)
+![ROC Curves](images/rocCurves.png)
+
+- **Training vs. Validation Loss and Accuracy:** The curves demonstrate a steady decrease in loss for both training and validation datasets, suggesting the model is learning effectively without severe overfitting.
+
+- **Model Generalization:** A similar trend in training and validation accuracy over epochs indicates that the model generalizes well to unseen data, as the validation performance closely tracks the training performance.
+
+- **Precision, Recall, and F1 Scores:** The classification report’s precision, recall, and F1 scores reveal the model's effectiveness in correctly classifying both positive and negative sentiments, with high scores across all metrics reflecting balanced performance.
+
+- **ROC Curve Insights:** The ROC curve shows a strong separation for both classes, with the model achieving high area under the curve (AUC) scores for both micro- and macro-averages, indicating robust binary classification capabilities.
+
+- **Potential Areas for Improvement:** If there is a slight gap between training and validation curves, it may suggest minor overfitting. In this case, techniques like dropout layers or data augmentation could further improve generalization.
 
 ## Conclusion
 
