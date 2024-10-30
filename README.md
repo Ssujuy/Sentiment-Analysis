@@ -4,6 +4,7 @@ This project leverages a neural network to perform sentiment classification on I
 
 ## Table of Contents
 - [Project Setup and Preprocessing](#project-setup-and-preprocessing)
+- [Imports and  Prerequisites](#imports-and-prerequisites)
 - [Code for GloVe Embedding and Data Tokenization](#code-for-glove-embedding-and-data-tokenization)
 - [Building the Neural Network](#building-the-neural-network)
 - [Training and Validation](#training-and-validation)
